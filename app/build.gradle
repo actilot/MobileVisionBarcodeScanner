@@ -1,14 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.2"
+    compileSdkVersion 28
     defaultConfig {
         applicationId "xyz.belvi.mobilevisionbarcodesample"
-        minSdkVersion 14
-        targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 2
+        versionName "1.1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -27,9 +26,9 @@ repositories {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation 'com.android.support:support-v4:26.1.0'
-    implementation 'com.android.support:design:26.1.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0-beta01'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0-rc01'
     //    implementation 'com.github.KingsMentor:MobileVisionBarcodeScanner:2.0.0'
     //    implementation('com.github.CharlesHarroch:MobileVisionBarcodeScanner:1.2') { transitive = true; }
     implementation project(':barcodescanner')

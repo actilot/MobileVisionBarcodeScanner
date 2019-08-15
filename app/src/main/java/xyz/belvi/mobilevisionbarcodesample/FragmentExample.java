@@ -1,14 +1,15 @@
 package xyz.belvi.mobilevisionbarcodesample;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.SwitchCompat;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SwitchCompat;
+import androidx.fragment.app.Fragment;
 
 import com.google.android.gms.samples.vision.barcodereader.BarcodeCapture;
 import com.google.android.gms.samples.vision.barcodereader.BarcodeGraphic;
